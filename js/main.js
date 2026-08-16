@@ -107,6 +107,7 @@ var FOOTER_HTML =
                     '<a href="programs.html#noor-al-bayan" class="block text-sm text-muted hover:text-primary transition-colors">نور البيان</a>' +
                     '<a href="programs.html#qaida" class="block text-sm text-muted hover:text-primary transition-colors">القاعدة النورانية</a>' +
                     '<a href="programs.html#islamic-studies" class="block text-sm text-muted hover:text-primary transition-colors">الدراسات الإسلامية</a>' +
+                    '<a href="programs.html#arabic" class="block text-sm text-muted hover:text-primary transition-colors">اللغة العربية</a>' +
                 '</div>' +
             '</div>' +
             '<div>' +
