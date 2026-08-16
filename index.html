@@ -43,9 +43,13 @@
     <main>
     <!-- ========== HERO ========== -->
     <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden hero-glow">
-        <div class="relative w-full lg:absolute lg:inset-0 lg:h-full">
-            <img src="images/hero-light.webp" alt="طفل يتعلم القرآن" class="w-full h-auto max-h-[65vh] object-contain lg:h-full lg:object-cover lg:object-center lg:max-h-none dark:hidden">
-            <img src="images/hero-dark.webp" alt="طفل يتعلم القرآن" class="w-full h-auto max-h-[65vh] object-contain lg:h-full lg:object-cover lg:object-center lg:max-h-none hidden dark:block">
+        <div class="absolute inset-0 w-full h-full lg:hidden">
+            <img src="images/hero-phone.webp" alt="طفل يتعلم القرآن" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-surface/10"></div>
+        </div>
+        <div class="absolute inset-0 w-full h-full hidden lg:block">
+            <img src="images/hero-light.webp" alt="طفل يتعلم القرآن" class="w-full h-full object-cover object-center dark:hidden">
+            <img src="images/hero-dark.webp" alt="طفل يتعلم القرآن" class="w-full h-full object-cover object-center hidden dark:block">
             <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/70 to-surface/20"></div>
         </div>
         <div class="absolute top-32 left-10 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-float"></div>
