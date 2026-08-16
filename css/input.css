@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Almafhum Design System — Brand Colors (official palette)
+   Light Mode + Dark Mode
+   ============================================================ */
+
+/* ===== CSS VARIABLES — LIGHT (default) ===== */
+:root {
+    --c-primary:   0 191 165;   /* #00BFA5 تركواز أساسي */
+    --c-secondary: 78 205 196;  /* #4ECDC4 تركواز فاتح */
+    --c-accent:    255 209 102; /* #FFD166 ذهبي */
+    --c-accent2:   255 107 107; /* #FF6B6B مرجاني */
+    --c-surface:   248 250 252; /* #F8FAFC خلفية */
+    --c-card:      255 255 255; /* #FFFFFF بطاقات */
+    --c-content:   31 41 55;    /* #1F2937 نص أساسي */
+    --c-muted:     107 114 128; /* #6B7280 نص ثانوي */
+    --c-line:      229 231 235; /* #E5E7EB حدود */
+    --c-success:   34 197 94;   /* #22C55E */
+    --c-info:      59 130 246;  /* #3B82F6 */
+    --c-warning:   245 158 11;  /* #F59E0B */
+    --c-error:     239 68 68;   /* #EF4444 */
+}
+
+/* ===== CSS VARIABLES — DARK ===== */
+.dark {
+    --c-primary:   108 92 231;   /* #6C5CE7 Indigo Purple */
+    --c-secondary: 0 206 201;    /* #00CEC9 Deep Cyan */
+    --c-accent:    245 197 66;   /* #F5C542 Neon Gold */
+    --c-accent2:   255 118 117;  /* #FF7675 */
+    --c-surface:   15 23 42;     /* #0F172A Dark Slate */
+    --c-card:      30 41 59;     /* #1E293B Surface */
+    --c-content:   226 232 240;  /* #E2E8F0 Light Gray */
+    --c-muted:     148 163 184;  /* #94A3B8 Muted Gray */
+    --c-line:      51 65 85;     /* #334155 Border */
+    --c-success:   16 185 129;   /* #10B981 */
+    --c-info:      59 130 246;   /* #3B82F6 */
+    --c-warning:   245 158 11;   /* #F59E0B */
+    --c-error:     244 63 94;    /* #F43F5E */
+}
+
+/* ===== BASE ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* ===== GRADIENTS (Brand Book) ===== */
+.gradient-text {
+    background: linear-gradient(135deg, rgb(var(--c-primary)), rgb(var(--c-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.dark .gradient-text {
+    background: linear-gradient(135deg, #6C5CE7, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-primary {
+    background: linear-gradient(135deg, rgb(var(--c-primary)), rgb(var(--c-secondary)));
+}
+.dark .gradient-primary {
+    background: linear-gradient(135deg, #6C5CE7, #8B5CF6);
+}
+
+.gradient-gold {
+    background: linear-gradient(135deg, #FFD166, #FFC233);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+}
+
+.gradient-hero {
+    background: linear-gradient(135deg, rgb(var(--c-primary)), rgb(var(--c-secondary)), rgb(var(--c-accent)));
+}
+.dark .gradient-hero {
+    background: linear-gradient(135deg, #6C5CE7, #8B5CF6, #F5C542);
+}
+
+/* ===== EFFECTS ===== */
+.hero-glow {
+    background: radial-gradient(ellipse at 30% 50%, rgb(var(--c-primary) / 0.12) 0%, transparent 60%);
+}
+
+.card-hover { transition: all 0.3s ease; }
+.card-hover:hover { transform: translateY(-6px); }
+
+.pricing-popular { position: relative; overflow: hidden; }
+.pricing-popular::before {
+    content: 'الأكثر طلباً';
+    position: absolute; top: 20px; left: -35px;
+    background: linear-gradient(135deg, rgb(var(--c-primary)), rgb(var(--c-secondary)));
+    color: #fff; padding: 4px 40px; font-size: 0.75rem; font-weight: 700;
+    transform: rotate(45deg); z-index: 5;
+}
+
+.timeline-line {
+    position: absolute; right: 23px; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom, rgb(var(--c-primary)), rgb(var(--c-secondary)), rgb(var(--c-accent)));
+}
+
+.nav-scrolled { box-shadow: 0 4px 30px rgb(var(--c-content) / 0.06); }
+
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faq-answer.open { max-height: 400px; }
+
+.scroll-indicator { animation: bounce 2s infinite; }
+@keyframes bounce {
+    0%,20%,50%,80%,100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-10px) translateX(-50%); }
+    60% { transform: translateY(-5px) translateX(-50%); }
+}
+
+/* ===== TABS (login roles) ===== */
+.tab-pill {
+    transition: all 0.3s ease;
+}
+.tab-pill.tab-active {
+    background: rgb(var(--c-primary));
+    color: #fff;
+    box-shadow: 0 4px 15px rgb(var(--c-primary) / 0.3);
+}
+.panel-hidden { display: none; }
+
+/* ===== SCROLLBAR (nice touch) ===== */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: rgb(var(--c-surface)); }
+::-webkit-scrollbar-thumb { background: rgb(var(--c-primary) / 0.4); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgb(var(--c-primary) / 0.7); }
