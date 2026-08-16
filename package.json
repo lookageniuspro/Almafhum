@@ -1,0 +1,13 @@
+{
+  "name": "almafhum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Almafhum — منصة تعليمية قرآنية (تعلّم القرآن بفهم واحفظه بثقة)",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
