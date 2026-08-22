@@ -113,7 +113,7 @@ var FOOTER_HTML =
             '<div>' +
                 '<h4 class="font-bold mb-4">تواصل معنا</h4>' +
                 '<div class="space-y-3">' +
-                    '<a href="mailto:Info.almafhum@gmail.com" class="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> <span dir="ltr">Info.almafhum@gmail.com</span></a>' +
+                    '<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Info.almafhum@gmail.com" target="_blank" rel="noopener" class="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> <span dir="ltr">Info.almafhum@gmail.com</span></a>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:phone" width="16" class="text-primary"></iconify-icon> <span dir="ltr">+966 5XX XXX XXXX</span></div>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:message-circle" width="16" class="text-primary"></iconify-icon> واتساب مباشر</div>' +
                 '</div>' +
