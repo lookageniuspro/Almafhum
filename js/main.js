@@ -113,7 +113,7 @@ var FOOTER_HTML =
             '<div>' +
                 '<h4 class="font-bold mb-4">تواصل معنا</h4>' +
                 '<div class="space-y-3">' +
-                    '<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Info.almafhum@gmail.com" target="_blank" rel="noopener" class="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> <span dir="ltr">Info.almafhum@gmail.com</span></a>' +
+                    '<a href="mailto:Info.almafhum@gmail.com" data-mail-compose="Info.almafhum@gmail.com" class="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> <span dir="ltr">Info.almafhum@gmail.com</span></a>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:phone" width="16" class="text-primary"></iconify-icon> <span dir="ltr">+966 5XX XXX XXXX</span></div>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:message-circle" width="16" class="text-primary"></iconify-icon> واتساب مباشر</div>' +
                 '</div>' +
@@ -429,6 +429,22 @@ function initSmoothScroll() {
 }
 
 /* ============================================================
+   MAIL LINKS (mailto on mobile, Gmail compose on desktop)
+   ============================================================ */
+function initMailLinks() {
+    document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[data-mail-compose]');
+        if (!a) return;
+        var ua = navigator.userAgent || '';
+        var isMobile = /Android|iPhone|iPad|iPod|IEMobile|Opera Mini/i.test(ua) ||
+            (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+        if (isMobile) return;
+        e.preventDefault();
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(a.getAttribute('data-mail-compose')), '_blank', 'noopener');
+    });
+}
+
+/* ============================================================
    BOOT
    ============================================================ */
 document.addEventListener('DOMContentLoaded', function () {
@@ -441,4 +457,5 @@ document.addEventListener('DOMContentLoaded', function () {
     initTabs();
     initForms();
     initSmoothScroll();
+    initMailLinks();
 });
