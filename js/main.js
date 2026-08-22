@@ -82,10 +82,10 @@ var FOOTER_HTML =
                 '</div>' +
                 '<p class="text-muted text-sm leading-relaxed mb-4">منصة تعليمية قرآنية متكاملة تهدف لتقديم تجربة تعلم متميزة تجمع بين الفهم والحفظ والتقنية الحديثة.</p>' +
                 '<div class="flex gap-3">' +
-                    '<a href="#" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:facebook" width="16"></iconify-icon></a>' +
-                    '<a href="#" aria-label="انستغرام" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:instagram" width="16"></iconify-icon></a>' +
+                    '<a href="https://www.facebook.com/profile.php?id=61593546452715" target="_blank" rel="noopener" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:facebook" width="16"></iconify-icon></a>' +
+                    '<a href="https://www.instagram.com/almafhumhq" target="_blank" rel="noopener" aria-label="انستغرام" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:instagram" width="16"></iconify-icon></a>' +
                     '<a href="#" aria-label="تيك توك" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="simple-icons:tiktok" width="16"></iconify-icon></a>' +
-                    '<a href="#" aria-label="يوتيوب" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:youtube" width="16"></iconify-icon></a>' +
+                    '<a href="https://www.youtube.com/channel/UClziCbVf99NDS24Wwp7ECyQ" target="_blank" rel="noopener" aria-label="يوتيوب" class="w-10 h-10 rounded-full bg-content/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><iconify-icon icon="lucide:youtube" width="16"></iconify-icon></a>' +
                 '</div>' +
             '</div>' +
             '<div>' +
@@ -113,7 +113,7 @@ var FOOTER_HTML =
             '<div>' +
                 '<h4 class="font-bold mb-4">تواصل معنا</h4>' +
                 '<div class="space-y-3">' +
-                    '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> info@almafhum.com</div>' +
+                    '<a href="mailto:Info.almafhum@gmail.com" dir="ltr" class="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"><iconify-icon icon="lucide:mail" width="16" class="text-primary"></iconify-icon> Info.almafhum@gmail.com</a>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:phone" width="16" class="text-primary"></iconify-icon> <span dir="ltr">+966 5XX XXX XXXX</span></div>' +
                     '<div class="flex items-center gap-2 text-sm text-muted"><iconify-icon icon="lucide:message-circle" width="16" class="text-primary"></iconify-icon> واتساب مباشر</div>' +
                 '</div>' +
